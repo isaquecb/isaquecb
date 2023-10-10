@@ -1,0 +1,82 @@
+#base-box {
+    box-sizing: border-box;
+    width: 1366px;
+    height: 777px; /* ~ 1/5 out of the total width */
+    position: absolute;
+    border: 1px solid black; 
+    top: 0;
+    right: 0;
+}
+
+#header-box {
+    display: flex;
+    width: 1362px;
+    height: 50px; /* ~ 1/10 out of the total height */
+    background-color: lightblue;
+    border: 1px solid black;
+    justify-self: stretch;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+}
+
+#body-box {
+    display: flex;
+    width: 990px; /* Equivalent to the total width subtracted by the pool-box width */
+    height: 680px; /* Equivalent to the subtraction of either footer and header height, booth equal to each other */
+    background-image: url(teste-das-16-personalidades-3-ob06h3dakyo1i1ed2erdsub75jv15es32cbt07fa7k.png);
+    border: 1px solid black;
+    position: absolute;
+    top: 90;
+    right: 0;
+    box-sizing: content-box;
+}
+
+#poll-box {
+    width: 370px; /* ~ 1/4 out of the total width */;
+    height: 721px; /* Equivalent to the total height subtracted by the header-box height */
+    border: 1px solid black;
+    position: absolute;
+    background-color: rgb(156, 96, 156);
+    top: 90;
+    left: 0;
+    bottom: 0;
+    box-sizing: content-box;
+}
+
+#footer-box {
+    display: flex;
+    width: 990px;
+    height: 39px; /* ~ 1/10 out of the total height */
+    background-color: lightgreen;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    background-color: rgb(236, 217, 155);
+    border: 2px solid rgb(236, 217, 155);
+    border-radius: 15px;
+}
+
+img {
+    width: 400px;
+    height: 100px;
+    margin: 0 25%;
+    border: 7px solid lightsalmon;
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0 25%;
+}
+
+#poll-box h1 {
+    background-image: linear-gradient(to right, lightgreen, rgb(156, 96, 156),  rgb(236, 217, 155), lightblue);
+    border-radius: 15px;
+}
